@@ -1,0 +1,30 @@
+
+:root{
+    --bodyBgColor:#242424;
+    --bgColor:#505050a3;
+    --pColor:#FFA500;
+    --sColor:#FF2400;
+}
+
+.Header{
+    background-color: #333;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  var(--pColor);
+    font-size: 25px;
+    gap: 8px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.HeaderImage{
+    width: 30px;
+}
+.do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

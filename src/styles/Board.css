@@ -1,0 +1,184 @@
+
+
+
+:root{
+    --bodyBgColor:#242424;
+    --bgColor:#505050a3;
+    --pColor:#FFA500;
+    --sColor:#FF2400;
+}
+
+.Board{
+    width: 80%;
+    border: 2px solid var(--bgColor);
+    color: wheat;
+    text-align: center;
+    padding: 10px 15px;
+    display: flex;
+    overflow: hidden;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 10px;
+    position: relative;
+    top: -3rem;
+}
+.Chellenge{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    margin-top: 4rem;
+    animation: anime 800ms forwards ease;
+    
+}
+@keyframes anime{
+    0%{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    70%{
+        transform: scale(1.1);
+    }
+}
+.userWord{
+    background-color: transparent;
+    border: 2px solid var(--bgColor);
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    color: wheat;
+    font-size: 40px;
+    transition: 300ms;
+    margin-top: -3rem;
+}
+.userWord:focus{
+    outline: none;
+}
+.error{
+    background-color: transparent;
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    color: wheat;
+    font-size: 40px;
+    border: 2px solid var(--sColor);
+    animation: err 500ms forwards ease;
+    margin-top: -3rem;
+}
+.error:focus{
+    outline: none;
+}
+@keyframes err{
+    0%{
+        transform: translateX(10px);
+    }
+    30%{
+        transform: translateX(-10px);
+    }
+    60%{
+        transform: translateX(10px);
+    }
+    90%{
+        transform: translateX(-10px);
+    }
+}
+.Clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    color: wheat;
+    font-size: 70px;
+    gap: 5px;
+}
+
+.GameOver{
+    width: 80%;
+    border: 2px solid var(--bgColor);
+    border-radius: 7px;
+    animation: ann 950ms forwards ease;
+    height: 380px;
+    position: relative;
+    top: -3rem;
+    color: #f5deb3;
+    
+}
+@keyframes ann {
+    0%{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    70%{
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (min-width:750px) {
+    .Board{
+        width: 50%;
+    }
+    .userWord{
+        width: 40%;
+    }
+    .error{
+        width: 40%;;
+    }
+    .GameOver{
+        width: 65%;
+    }
+}
+.in{
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.RankImage{
+    width: 200px;
+    position: relative;
+    top: -1rem;
+}
+.tit{
+    font-size: 26px;
+    z-index: 1000;
+    color: var(--pColor);
+    font-weight: bold;
+}
+.main{
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 1rem;
+}
+.data{
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+    gap: 10px;
+    color: var(--pColor);
+    font-weight: bold;
+    font-size: 22px;
+   
+}
+.percent{
+    color: wheat;
+    font-size: 27px;
+}
+.swpn{
+    color: wheat;
+    font-size: 27px;
+}
+.restart{
+    color: wheat;
+    background-color:#333;
+    padding: 8px 8px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    position: relative;
+    font-size: 25px;
+}

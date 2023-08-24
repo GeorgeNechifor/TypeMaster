@@ -1,0 +1,36 @@
+
+
+
+:root{
+    --bodyBgColor:#242424;
+    --bgColor:#505050a3;
+    --pColor:#FFA500;
+    --sColor:#FF2400;
+}
+
+.Footer{
+    width: 100%;
+    background-color: #333333c0;
+    color: var(--pColor);
+    height: 40px;
+    position: absolute;
+    top: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-height:700px) {
+   .Footer{
+        top: 140vh;
+   }
+}
+
+@media only screen and (min-height:850px) {
+    .Footer{
+         top: 100vh;
+    }
+ }
+ 
